@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="index">首页</string>
+    <string name="find">附近</string>
+    <string name="info">精选</string>
+    <string name="se">我的</string>
+    <string name="city">城市</string>
+    <string name="search">搜索商家或地址</string>
+    <string name="nowCity">当前城市</string>
+    <string name="searchCity">城市/行政区/拼音</string>
+    <string name="hotCity">热门城市</string>
+    <string name="hotCity1">北京市</string>
+    <string name="hotCity2">上海市</string>
+    <string name="hotCity3">成都市</string>
+    <string name="hotCity4">杭州市</string>
+    <string name="hotCity5">郑州市</string>
+    <string name="hotCity6">武汉市</string>
+    <string name="hotCity7">天津市</string>
+    <string name="hotCity8">重庆市</string>
+    <string name="hotCity9">西安市</string>
+    <string name="location">当前位置:</string>
+</resources>

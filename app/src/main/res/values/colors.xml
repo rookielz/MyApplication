@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff226d</color>
+    <color name="indexTextColors">#ff336d</color>
+    <color name="defaultTextColor">#cccaca</color>
+    <color name="indexSearchEditText">#FFF</color>
+</resources>

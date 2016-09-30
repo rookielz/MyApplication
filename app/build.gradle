@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '24.0.2'
+    defaultConfig {
+        applicationId "rookiez.top.myapplication"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:22.+'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/AMap_Location_V3.00_20160922.jar')
+    compile files('libs/gson-2.3.1.jar')
+    compile files('libs/okhttp-3.4.1.jar')
+    compile files('libs/okio-1.10.0.jar')
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile files('libs/MobCommons-2016.0921.1136.jar')
+    compile files('libs/MobTools-2016.0921.1136.jar')
+}
+dependencies {
+    compile 'com.android.support:support-v4:22.+'
+}
+dependencies {
+    compile 'com.android.support:support-v4:22.+'
+}
+dependencies {
+    compile 'com.android.support:support-v4:22.+'
+}
+dependencies {
+    compile 'com.android.support:support-v4:22.+'
+}
+dependencies {
+    compile 'com.android.support:design:22.2.0'
+}
+repositories{
+    flatDir{
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
+
+dependencies {
+    compile name:'SMSSDK-2.1.2',ext:'aar'
+    compile name:'SMSSDKGUI-2.1.2',ext:'aar'
+}
