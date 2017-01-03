@@ -95,7 +95,11 @@ public class LoginActivity extends Activity implements View.OnClickListener{
 //                        Log.i(TAG, "afterEvent: "+data.toString());
                     }
                 }else{
-                    Toast.makeText(LoginActivity.this,"验证码错误",Toast.LENGTH_LONG).show();
+                    Message msg = handler.obtainMessage();
+                    Bundle bundle = new Bundle();
+                    bundle.putString("data","验证码错误");
+                    msg.setData(bundle);
+                    handler.sendMessage(msg);
                     ((Throwable)data).printStackTrace();
                 }
             }

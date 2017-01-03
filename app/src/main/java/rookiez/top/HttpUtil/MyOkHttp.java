@@ -48,8 +48,10 @@ public class MyOkHttp extends Thread{
             Response response = client.newCall(request).execute();
             if (response.isSuccessful())
                 result = response.body().string();
-            else
+            else{
                 result = "网络请求失败";
+                n = 0x00;
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
